@@ -10,7 +10,14 @@ import { MyCounterComponent } from './my-counter/my-counter.component';
 @NgModule({
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ count: counterReducer }),
+    StoreModule.forRoot({ count: counterReducer }, {
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true,
+        strictStateSerializability: true,
+        strictActionSerializability: true
+      }
+    }),
     ScoreboardModule
   ],
   declarations: [AppComponent, MyCounterComponent],
