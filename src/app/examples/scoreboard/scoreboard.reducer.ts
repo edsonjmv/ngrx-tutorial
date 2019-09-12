@@ -19,6 +19,8 @@ const scoreboardReducer = createReducer(
   on(ScoreboardActions.setScores, (state, { game }) => ({ home: game.home, away: game.away }))
 )
 
+export const scoreboardFeatureKey = 'game';
+
 export function reducer(state: State | undefined, action: Action) {
   return scoreboardReducer(state, action);
 }

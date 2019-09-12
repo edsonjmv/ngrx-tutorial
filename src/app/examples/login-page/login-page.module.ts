@@ -12,7 +12,7 @@ import { loginReducer } from './login-page.reducer';
   ],
   declarations: [LoginPageComponent]
 })
-export class AppModule { }
+export class LoginModule { }
 
 
 /*

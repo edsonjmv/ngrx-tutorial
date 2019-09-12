@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule } from '@ngrx/store';
+import { ScoreboardModule } from './examples/scoreboard/scoreboard.module';
 
 import { AppComponent } from './app.component';
 import { counterReducer } from './my-counter/counter.reducer';
@@ -9,7 +10,8 @@ import { MyCounterComponent } from './my-counter/my-counter.component';
 @NgModule({
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({ count: counterReducer }),
+    ScoreboardModule
   ],
   declarations: [AppComponent, MyCounterComponent],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@ import * as fromScoreboard from './scoreboard.reducer';
 
 @NgModule({
   imports: [
-    StoreModule.forRoot({ game: fromScoreboard.reducer })
+    StoreModule.forFeature(fromScoreboard.scoreboardFeatureKey, fromScoreboard.reducer)
   ],
 })
-export class AppModule { }
+export class ScoreboardModule { }
