@@ -8,7 +8,7 @@ export const initialState = {
 
 // review this set state
 const _loginReducer = createReducer(initialState, 
-  on(login, state => state = { username: '', password: '' })
+  on(login, (state, { form }) => ({ username: form.username, password: form.password }))
 );
 
 export function loginReducer(state, action) {

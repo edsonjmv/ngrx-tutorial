@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  template: `
+    <h1>NgRx Tutorial</h1>
+    <app-my-counter></app-my-counter>
+  `
 })
 export class AppComponent { }
 

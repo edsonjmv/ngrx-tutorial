@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import { counterReducer } from './counter.reducer';
+import { counterReducer } from './my-counter/counter.reducer';
 import { MyCounterComponent } from './my-counter/my-counter.component';
 
 @NgModule({
