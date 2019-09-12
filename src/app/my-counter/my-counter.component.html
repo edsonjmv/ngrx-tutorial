@@ -1,0 +1,17 @@
+<div class="controls">
+  <button id="decrement" (click)="decrement()">
+    Decrement
+  </button>
+
+  <div>
+    Current Count: {{ count$ | async }}
+  </div>
+
+  <button id="increment" (click)="increment()">
+    Increment
+  </button>
+</div>
+
+<button id="reset" (click)="reset()">
+  Reset
+</button>
